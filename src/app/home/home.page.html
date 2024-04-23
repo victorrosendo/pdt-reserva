@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">RCD</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <div>
+      <img src="assets/logo/mi_loguito.png" alt="logo" />
+    </div>
+
+    <div>
+      <ion-item>
+        <ion-label position="floating">Correo</ion-label>
+        <ion-input type="text" [(ngModel)]="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+    </div>
+
+    <ion-button expand="block" (click)="login()">Ingresar</ion-button>
+    <ion-button expand="block" (click)="register()">Registrar</ion-button>
+  </div>
+</ion-content>
