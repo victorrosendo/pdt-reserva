@@ -42,5 +42,9 @@ export const routes: Routes = [
   {
     path: 'register',
     loadComponent: () => import('./pages/register/register.page').then( m => m.RegisterPage)
+  },  {
+    path: 'formularioreserva',
+    loadComponent: () => import('./pages/formularioreserva/formularioreserva.page').then( m => m.FormularioreservaPage)
   },
+
 ];
